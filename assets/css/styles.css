@@ -17,6 +17,7 @@
   --word-color: #000;
   --orange-color: #DF711B;
   --orange-color-light: #f7a364;
+  --blue-color: #64C9CF;
 
   /*===== Font and typography =====*/
   /* --body-font: 'Poppins', sans-serif; */
@@ -383,6 +384,7 @@ img{
 }
 .about_description{
   font-size: 18px;
+  text-align: left;
 }
 
 .about_number{
@@ -415,7 +417,7 @@ img{
   border-radius: .25rem;
 }
 .skills__name:hover{
-  background-color: var(--orange-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
 }
 .skills_img img{
@@ -456,6 +458,7 @@ img{
 
 .portfolio_img{
   width: 100%;
+  height: 347px;
   transition: .4s;
 }
 
@@ -608,7 +611,7 @@ img{
   }
 
   .about_description{
-    text-align: center;
+    text-align: left;
   }
   .about_description-2{
     text-align: center;
