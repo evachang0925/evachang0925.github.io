@@ -516,7 +516,7 @@ img {
 }
 
 .portfolio_content:hover .portfolio_img {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 /* Active menu portfolio*/
