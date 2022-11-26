@@ -133,6 +133,18 @@ img {
   /* margin-top: 100px; */
 }
 
+.section-5 {
+  /* padding: 4rem 0 2rem; */
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+
+.section-6 {
+  padding: 4rem 0 2rem;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
 .section-title,
 .section-subtitle {
   text-align: center;
