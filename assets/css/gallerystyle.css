@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Philosopher', sans-serif;
+  box-sizing: border-box;
+}
+
+.gallery-section{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.gallery{
+  border-radius: 15px;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+
+.imgl1{
+  border-radius: 8px 0px 0px 0px;
+}
+
+.imgr1{
+  border-radius: 0px 8px 0px 0px;
+}
+
+.imgl2{
+  border-radius: 0px 0px 0px 8px;
+}
+
+.imgr2{
+  border-radius: 0px 0px 8px 0px;
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
