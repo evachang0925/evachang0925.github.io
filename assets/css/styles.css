@@ -504,7 +504,7 @@ img {
 
 .portfolio_img {
   width: 100%;
-  height: 347px;
+  /* height: 347px; */
   transition: .4s;
 }
 
