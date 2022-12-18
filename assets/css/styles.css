@@ -158,8 +158,20 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
+}
+
+.sec-subtitle {
+  /* display: block; */
+  text-align: center;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+}
+
+.sec-subtitle:hover {
+  color: var(--orange-color-light);
 }
 
 /*===== LAYOUT =====*/
@@ -535,6 +547,13 @@ img {
 .active-portfolio {
   color: var(--word-color);
   font-weight: var(--font-semi-bold);
+}
+
+.insta {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 0 var(--mb-1);
+  transition: .3s;
 }
 
 /*===== TESTIMONIAL =====*/
