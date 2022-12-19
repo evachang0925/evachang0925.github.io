@@ -448,7 +448,7 @@ img {
 .about_img {
   justify-self: center;
   width: 220px;
-  border-radius: .5rem;
+  border-radius: 2rem;
 }
 
 /*===== SKILLS =====*/
@@ -483,11 +483,14 @@ img {
   border-radius: .5rem;
 }
 
+.imgchange{
+  margin-bottom: 15px;
+}
+
 .skills_img {
   justify-self: center;
-  /* width: 220px;
-  border-radius: .5rem; */
 }
+
 
 /*===== QUALIFICATION =====*/
 /*===== SERVICES =====*/
