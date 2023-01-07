@@ -397,10 +397,13 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
+  /* border-style: solid; */
   background-color: var(--orange-color);
+  /* border-width: medium; */
   color: var(--first-color-lighten);
+  /* font-weight: bold; */
   padding: .75rem 1rem;
-  border-radius: .25rem;
+  border-radius: 0.5rem;
   transition: .3s;
 }
 
