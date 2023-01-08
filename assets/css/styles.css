@@ -483,7 +483,7 @@ img {
 .skills_img img {
   /* justify-self: center; */
   width: 220px;
-  border-radius: .5rem;
+  border-radius: 2rem;
 }
 
 .imgchange{
