@@ -480,6 +480,16 @@ img {
   color: var(--white-color);
 }
 
+#coffee {
+  cursor: url("/assets/img/coffee.png"), auto;
+}
+#friends {
+  cursor: url("/assets/img/friends.png"), auto;
+}
+#music {
+  cursor: url("/assets/img/music.png"), auto;
+}
+
 .skills_img img {
   /* justify-self: center; */
   width: 220px;
