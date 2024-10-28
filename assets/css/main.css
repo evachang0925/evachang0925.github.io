@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&family=ZCOOL+XiaoWei&display&family=Marcellus&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family:'Chiayi';
+  src: url('/fonts/ChiayiCity.ttf') format('trueFont'),
+      url('/fonts/ChiayiCity.woff2') format('woff2');
+  font-weight: normal;
+  font-size: normal;
+}
 
 * {
     box-sizing: border-box;
+    /* background-color: var(--first-color-lighten); */
 }
 
 
@@ -26,7 +34,7 @@
 
     /*===== Font and typography =====*/
     /* --body-font: 'Poppins', sans-serif; */
-    --body-font: 'Philosopher', sans-serif;
+    --body-font: 'Noto Sans', sans-serif;
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.5rem;
@@ -35,10 +43,12 @@
     --small-font-size: .938rem;
     --smaller-font-size: .75rem;
 
+    --other-font: 'Chiayi', sans-serif;
+
     /*===== Font weight =====*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    --font-bold: 700;
+    --font-medium: 200;
+    --font-semi-bold: 300;
+    --font-bold: 400;
 
     /*===== Margenes =====*/
     --mb-1: .5rem;
@@ -54,7 +64,9 @@
     --z-fixed: 100;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 main {
     max-width: 90em;
@@ -65,7 +77,9 @@ main {
 }
 
 body {
-    margin: 0;
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 
 }
 
@@ -146,7 +160,7 @@ label #sign-two {
 } */
 
 h1 {
-    font-family: var(--body-font);
+    font-family: var(--other-font);
     color: #000000;
     margin-bottom: 1rem;
     font-size: 46px;
@@ -159,7 +173,7 @@ h1 {
 
 
 h2 {
-    font-family: var(--body-font);
+    font-family: var(--other-font);
     font-size: 30px;
     color: #000000;
     line-height: 25px;
@@ -170,8 +184,8 @@ h2 {
 }
 
 
-.title {
-    font-family: 'ZCOOL XiaoWei', serif;
+/* .title {
+    font-family: var(---font);
     color: #000000;
     line-height: 30px;
     font-weight: 400;
@@ -181,10 +195,30 @@ h2 {
     padding-bottom: 5px;
     text-decoration: none;
     border-bottom: 1px solid #000000;
-}
+} */
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 30px;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    color: #4B445A;
+}
+
+b {
+    font-weight: 600;
+}
+/* .color{
+    padding: 1rem 0;
+    line-height: 32px;
+    background-color: var(--homebk-color);
+} */
+
+ol{
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
     max-width: 700px;
@@ -192,9 +226,30 @@ p {
     padding-bottom: 18px;
     margin-bottom: 18px;
     color: #4B445A;
+
+    list-style-type: decimal; /* decimal is the default value for ol */
+    margin-left: 26px; /* Add some left margin to make the numbers visible */
+    padding-left: 0; /* Remove default padding */
 }
 
-p.des {
+
+.list{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 30px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    color: #4B445A;
+
+    list-style-type: disc; /* decimal is the default value for ol */
+    margin-left: 20px; /* Add some left margin to make the numbers visible */
+    padding-left: 0; 
+}
+
+
+/* p.des {
     margin-top: 1px;
     padding-top: 3px;
     margin-bottom: 30px;
@@ -205,14 +260,15 @@ p.view {
     margin-bottom: 1.3rem;
     color: #000000;
     font-size: 16px;
-}
+} */
+
 a {
     text-decoration: none;
   }
   
 
 a.link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: #DB6F5A;
@@ -248,7 +304,7 @@ a.link:hover {
     width: 100%;
 }
 
-.work {
+/* .work {
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
     justify-content: space-evenly;
@@ -260,18 +316,20 @@ a.link:hover {
     grid-template: repeat(1, 4fr)/repeat(4, 1fr);
     justify-content: space-evenly;
     grid-gap: 0.3rem;
-}
+} */
 
 .three-columns-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
     grid-gap: 0rem;
 }
 
-.two-columns {
-    display: flex;
-    align-items: center;
+.two-columns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    grid-gap: 0rem;
 }
 
 .intro {
@@ -280,6 +338,26 @@ a.link:hover {
     grid-gap: 5rem;
     padding-bottom: 90px;
     padding-top: 50px
+}
+
+.flex-display {
+    display: flex;
+    align-items: center;
+}
+
+.home_social-icon {
+    margin-right: 10px;
+    margin-top: 6px; /* Adds some space between the icon and the h3 element */
+}
+
+h3 {
+    margin: 0; /* Removes default margin from h3 */
+    font-size: 1.5em; /* Optional: Adjust font size as needed */
+}
+
+.home_social-icon i {
+    font-size: 1.5rem; /* Adjust icon size as needed */
+    color: #333; /* Adjust icon color as needed */
 }
 
 .about {
@@ -302,8 +380,6 @@ p.short-about {
     width: 10%;
     float: left;
     position: relative;
-
-
 }
 
 .sidebar {
@@ -334,7 +410,7 @@ p.short-about {
 .sidebar ul li a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
     line-height: 25px;
     font-size: 15px;
@@ -350,7 +426,9 @@ p.short-about {
     float: right;
 }
 
-footer {
+
+
+/* footer {
     margin: 5rem 3rem 1.8rem 3rem;
     display: block;
     text-align: center;
@@ -361,7 +439,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     line-height: 35px;
-}
+} */
 
 @media (min-width: 768px) and (max-width:1080px) {
     main {
@@ -428,7 +506,7 @@ footer {
     }
 
     nav ul li a {
-        font-family: 'ZCOOL XiaoWei', serif;
+        font-family: 'Noto Sans', sans-serif;
         font-size: 20px;
         font-weight: 400;
     } */
@@ -595,14 +673,14 @@ footer {
     margin-right: var(--mb-2);
 }
 
-.l-header {
+/* .l-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
     background-color: rgba(255, 255, 255, 0.9);
-}
+} */
 
 /*===== NAV =====*/
 .nav {
@@ -610,7 +688,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size:  var(--normal-font-size);
+    /* font-size:  var(--normal-font-size); */
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -630,7 +709,7 @@ footer {
 
 .nav_item {
     margin-bottom: var(--mb-3);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .nav_link {
@@ -644,7 +723,7 @@ footer {
 
 .nav_logo{
     font-family: var(--body-font);
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .nav_logo,
@@ -724,3 +803,55 @@ footer {
 }
 
 
+/*===== FOOTER =====*/
+.footer {
+    /* background-color: #DF711B; */
+    color: var(--first-color);
+    text-align: center;
+  }
+  
+  .footer_container {
+    padding: 3rem 0;
+  }
+  
+  .footer_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .footer_description {
+    margin-bottom: var(--mb-3);
+  }
+  
+  .footer_social {
+    margin-bottom: var(--mb-6);
+  }
+  
+  .mail-link {
+    color: var(--first-color-lighten);
+  }
+  
+  .mail-link:hover {
+    /* color: var(--first-color-light); */
+    background-color: var(--orange-color-light);
+  }
+  
+  
+  .footer_link {
+    font-size: 1.4rem;
+    color: var(--first-color-lighten);
+    margin: 0 var(--mb-1);
+    transition: .3s;
+  }
+  
+  .footer_link:hover {
+    color: var(--orange-color-light);
+  }
+  
+  .footer_copy {
+    font-size: var(--smaller-font-size);
+    font-style: italic;
+    color: var(--first-color-lighten);
+  }
+  

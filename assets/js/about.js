@@ -57,3 +57,26 @@ sr.reveal('.about_img', { origin: 'right', delay: 200 })
 sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', { distance: '20px', delay: 50, interval: 100 })
 sr.reveal('.skills_img', { origin: 'right', delay: 200 })
+
+
+/*Change Image in Skills Section*/
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all the elements with the class 'skills__name'
+    const skillItems = document.querySelectorAll('.skills__name');
+    
+    // Get the image element to change
+    const imgChange = document.querySelector('.imgchange');
+    
+    // Add event listeners to each skill item
+    skillItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            // Change the image source based on the data attribute
+            imgChange.src = item.getAttribute('data-img');
+        });
+
+        // Optional: Change back to the original image when the mouse leaves
+        item.addEventListener('mouseout', function() {
+            imgChange.src = 'assets/img/101.png';
+        });
+    });
+});
