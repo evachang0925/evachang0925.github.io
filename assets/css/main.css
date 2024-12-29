@@ -304,6 +304,10 @@ a.link:hover {
     width: 100%;
 }
 
+.half {
+    width: 50%;
+}
+
 /* .work {
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);

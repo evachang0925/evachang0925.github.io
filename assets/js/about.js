@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Optional: Change back to the original image when the mouse leaves
         item.addEventListener('mouseout', function() {
-            imgChange.src = 'assets/img/101.png';
+            imgChange.src = 'assets/img/meee.png';
         });
     });
 });
