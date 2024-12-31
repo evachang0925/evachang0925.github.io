@@ -455,7 +455,7 @@ img {
 
 .button-link:hover {
   background-color: none;
-  color: var(--first-color-lighten);
+  color: var(--orange-color);
 }
 
 /*===== ABOUT =====*/
