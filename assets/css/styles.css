@@ -447,6 +447,26 @@ img {
   background-color: var(--orange-color);
 }
 
+/* Centered call-to-action block */
+.cta-container {
+  text-align: center;
+  margin-top: var(--mb-3);
+}
+
+.cta-container .section-subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.cta-container .button {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.cta-container .button i {
+  font-size: 1.25rem;
+}
+
 .button-link {
   background: none;
   color: var(--word-color);

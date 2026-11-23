@@ -859,3 +859,72 @@ p.short-about {
     color: var(--first-color-lighten);
   }
   
+
+/*===== PROJECT FOOTER NAV (work pages) =====*/
+.project-footer {
+    clear: both;
+    margin: 6rem 0 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e2dede;
+}
+
+.project-footer_heading {
+    margin: 0 0 1.5rem;
+}
+
+.project-footer_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project-footer_card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+.project-footer_img {
+    border-radius: .5rem;
+    margin-bottom: .75rem;
+}
+
+.project-footer_img img {
+    display: block;
+}
+
+.project-footer_subtitle {
+    font-size: var(--smaller-font-size);
+    color: var(--first-color-light);
+}
+
+.project-footer_name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    transition: color .3s;
+}
+
+.project-footer_card:hover .project-footer_name {
+    color: #DB6F5A;
+}
+
+.project-footer_back {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    margin-top: 2.5rem;
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.project-footer_back:hover {
+    color: #DB6F5A;
+    font-style: italic;
+}
+
+@media (max-width: 812px) {
+    .project-footer_grid {
+        grid-template-columns: 1fr;
+    }
+}
